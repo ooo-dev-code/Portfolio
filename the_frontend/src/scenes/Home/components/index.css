@@ -1,0 +1,153 @@
+:root {
+    --bg_color: white;
+    --pos1_1: 30px;
+    --pos1: 45px;
+}
+
+body {
+    margin: 10px;
+    background-color: var(--bg_color);
+}
+
+/* NavBar */
+
+.NavBar {
+    display: flex;
+}
+
+.NavBarp1 {
+    width: 50%;
+    height: 7vh;
+    border: 2px double rgb(72, 41, 41) ;
+    background: linear-gradient(48deg, rgba(181,90,9,1) 0%, rgba(255,0,102,1) 36%, rgba(255,0,0,1) 100%);
+    border-radius: 10px 100px 10px 100px;
+    box-shadow: inset 12px -10px 20px 0px brown;
+    position: relative;
+
+    &::after {
+        content: "";
+        border-radius: 30px 30px 30px 30px;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        transition: 1s all ease-out;
+        position: absolute;
+        left: var(--pos1_1);
+        top: 30px;
+    }
+    
+    &::before {
+        content: "";
+        border-radius: 30px 30px 30px 30px;
+        width: 30px;
+        height: 30px;
+        box-shadow: 0px 0px 0px 2px;
+        background: linear-gradient(48deg, rgba(181,90,9,1) 0%, rgba(255,0,102,1) 36%, rgba(255,0,0,1) 100%);
+        position: absolute;
+        left: var(--pos1);
+        transition: 1s all ease-out;
+        top: 40px;
+        z-index: 1;
+    }
+}
+
+.NavBarp2 {
+    width: 50%;
+    height: 7vh;
+    border: 2px double rgb(72, 41, 41) ;
+    background: linear-gradient(48deg, rgba(181,90,9,1) 0%, rgba(255,0,102,1) 36%, rgba(255,0,0,1) 100%);
+    border-radius: 10px 100px 10px 100px;
+    box-shadow: inset 12px -10px 20px 0px brown;
+    position: relative;
+
+    &::after {
+        content: "";
+        border-radius: 30px 30px 30px 30px;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        transition: 1s all ease-out;
+        position: absolute;
+        left: 45px;
+        top: 30px;
+    }
+    
+    &::before {
+        content: "";
+        border-radius: 30px 30px 30px 30px;
+        width: 30px;
+        height: 30px;
+        box-shadow: 0px 0px 0px 2px;
+        background: linear-gradient(48deg, rgba(181,90,9,1) 0%, rgba(255,0,102,1) 36%, rgba(255,0,0,1) 100%);
+        position: absolute;
+        transition: 1s all ease-out;
+        left: 60px;
+        top: 40px;
+        z-index: 1;
+    }
+}
+
+.Option {
+    padding-left: 106px;
+    padding-top: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    
+}
+
+.OptionNavBarp1 {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease-out;
+    opacity: 0.7;
+}
+.OptionNavBarp2 {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.5s all ease-out;
+    opacity: 0.7;
+}
+
+.ColorChanger {
+    width: 45px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 20px;
+    border: 1px solid black;
+    padding-top: 20px;
+    position: relative;
+    box-shadow: inset -3px 1px 20px 0px #e4c82e;
+
+
+    &::after {
+        content: "";
+        width: 23px;
+        height: 23px;
+        border-radius: 25px 25px 25px 25px;
+        border: 1px solid black;
+        bottom: 3px;
+        left: 36px;
+        background-color: #ffff00;
+        box-shadow: inset -2px -2px 0px 0px #adbc00;
+        position: absolute;
+    }
+}
+
+/* Front */
+
+
+
+/* Resume */
+
+
+
+/* Contact */
