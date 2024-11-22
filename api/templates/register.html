@@ -1,0 +1,11 @@
+{% extends "body.html" %} {% block content %}
+<h1>User Registered</h1>
+<ul>
+    {% for todo in reg %}
+    <li>
+        {{ todo.username }}: {% if todo.is_you %}Registered{% else %}Not Registered{% endif %}
+    </li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
